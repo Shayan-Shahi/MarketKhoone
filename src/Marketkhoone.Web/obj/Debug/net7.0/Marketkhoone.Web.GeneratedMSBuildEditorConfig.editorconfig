@@ -1,0 +1,549 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Marketkhoone.Web
+build_property.RootNamespace = Marketkhoone.Web
+build_property.ProjectDir = D:\MarketKhoone\src\Marketkhoone.Web\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = D:\MarketKhoone\src\Marketkhoone.Web
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Brand/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQnJhbmRcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Brand/BrandDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQnJhbmRcQnJhbmREZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Brand/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQnJhbmRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Brand/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQnJhbmRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Brand/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQnJhbmRcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Category/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2F0ZWdvcnlcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Category/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Category/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2F0ZWdvcnlcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Category/_EditCategoryVariantPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2F0ZWdvcnlcX0VkaXRDYXRlZ29yeVZhcmlhbnRQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/FeatureConstantValue/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRmVhdHVyZUNvbnN0YW50VmFsdWVcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/FeatureConstantValue/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRmVhdHVyZUNvbnN0YW50VmFsdWVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/FeatureConstantValue/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRmVhdHVyZUNvbnN0YW50VmFsdWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/FeatureConstantValue/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRmVhdHVyZUNvbnN0YW50VmFsdWVcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Feature/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRmVhdHVyZVxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Feature/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRmVhdHVyZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Feature/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRmVhdHVyZVxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Guarantee/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cR3VhcmFudGVlXEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Guarantee/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cR3VhcmFudGVlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Guarantee/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cR3VhcmFudGVlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Guarantee/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cR3VhcmFudGVlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Guarantee/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cR3VhcmFudGVlXExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/ProductShortLink/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdFNob3J0TGlua1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/ProductShortLink/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdFNob3J0TGlua1xMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Product/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdFxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Seller/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cU2VsbGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Seller/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cU2VsbGVyXExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Seller/SellerDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cU2VsbGVyXFNlbGxlckRldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Seller/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cU2VsbGVyXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Variant/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVmFyaWFudFxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Variant/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVmFyaWFudFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Variant/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVmFyaWFudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Variant/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVmFyaWFudFxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Cart/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydFxDaGVja291dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Cart/VerifyPayment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydFxWZXJpZnlQYXltZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Compare/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcGFyZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Compare/_CompareBodyPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcGFyZVxfQ29tcGFyZUJvZHlQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Error404.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3I0MDQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Error500.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3I1MDAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Identity/LoginWithPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSWRlbnRpdHlcTG9naW5XaXRoUGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Identity/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSWRlbnRpdHlcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Inventory/Consignment/ChangeConsignmentStatusToReceivedAndAddStockPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3J5XENvbnNpZ25tZW50XENoYW5nZUNvbnNpZ25tZW50U3RhdHVzVG9SZWNlaXZlZEFuZEFkZFN0b2NrUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Inventory/Consignment/ConsignmentDetailsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3J5XENvbnNpZ25tZW50XENvbnNpZ25tZW50RGV0YWlsc1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Inventory/Consignment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3J5XENvbnNpZ25tZW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Inventory/Consignment/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3J5XENvbnNpZ25tZW50XExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Inventory/DeliveryOrder/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3J5XERlbGl2ZXJ5T3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Inventory/DeliveryOrder/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3J5XERlbGl2ZXJ5T3JkZXJcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Inventory/DeliveryOrder/_DeliveryToPostPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3J5XERlbGl2ZXJ5T3JkZXJcX0RlbGl2ZXJ5VG9Qb3N0UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Inventory/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3J5XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Inventory/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3J5XE9yZGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Inventory/Order/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3J5XE9yZGVyXExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Inventory/ProductStock/AddProductStockByConsignment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3J5XFByb2R1Y3RTdG9ja1xBZGRQcm9kdWN0U3RvY2tCeUNvbnNpZ25tZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Inventory/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3J5XF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Product/ConsignmentDetailsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxDb25zaWdubWVudERldGFpbHNQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Product/ProductShortLink.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxQcm9kdWN0U2hvcnRMaW5rLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Profile/Addresses/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVxBZGRyZXNzZXNcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Profile/Addresses/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVxBZGRyZXNzZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Profile/Comments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVxDb21tZW50c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Profile/Comments/_Comments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVxDb21tZW50c1xfQ29tbWVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Profile/Comments/_Products.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVxDb21tZW50c1xfUHJvZHVjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Profile/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Profile/Orders/_Orders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVxPcmRlcnNcX09yZGVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Profile/Wallet/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVxXYWxsZXRcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Profile/Wallet/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVxXYWxsZXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Profile/Wallet/VerifyPayment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVxXYWxsZXRcVmVyaWZ5UGF5bWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Profile/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVxfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/SellerPanel/Consignment/ConfirmationConsignment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyUGFuZWxcQ29uc2lnbm1lbnRcQ29uZmlybWF0aW9uQ29uc2lnbm1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/SellerPanel/Consignment/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyUGFuZWxcQ29uc2lnbm1lbnRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/SellerPanel/Consignment/_ProductVariantTrPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyUGFuZWxcQ29uc2lnbm1lbnRcX1Byb2R1Y3RWYXJpYW50VHJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/SellerPanel/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyUGFuZWxcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/SellerPanel/Product/All.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyUGFuZWxcUHJvZHVjdFxBbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/SellerPanel/Product/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyUGFuZWxcUHJvZHVjdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/SellerPanel/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyUGFuZWxcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/SellerPanel/Product/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyUGFuZWxcUHJvZHVjdFxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/SellerPanel/Product/ListForAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyUGFuZWxcUHJvZHVjdFxMaXN0Rm9yQWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/SellerPanel/Product/ProductVariants.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyUGFuZWxcUHJvZHVjdFxQcm9kdWN0VmFyaWFudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/SellerPanel/Product/Successful.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyUGFuZWxcUHJvZHVjdFxTdWNjZXNzZnVsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/SellerPanel/Product/SuccessfulProductVariant.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyUGFuZWxcUHJvZHVjdFxTdWNjZXNzZnVsUHJvZHVjdFZhcmlhbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/SellerPanel/Product/_AddEditDiscountPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyUGFuZWxcUHJvZHVjdFxfQWRkRWRpdERpc2NvdW50UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/SellerPanel/Product/_EditProductVariantPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyUGFuZWxcUHJvZHVjdFxfRWRpdFByb2R1Y3RWYXJpYW50UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/SellerPanel/Product/_RequestForAddBrandPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyUGFuZWxcUHJvZHVjdFxfUmVxdWVzdEZvckFkZEJyYW5kUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/SellerPanel/Product/_SelectProductCategoryPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyUGFuZWxcUHJvZHVjdFxfU2VsZWN0UHJvZHVjdENhdGVnb3J5UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/SellerPanel/Product/_ShowCategoryFeaturesPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyUGFuZWxcUHJvZHVjdFxfU2hvd0NhdGVnb3J5RmVhdHVyZXNQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/SellerPanel/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyUGFuZWxcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Seller/ConfirmationPhoneNumber.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXENvbmZpcm1hdGlvblBob25lTnVtYmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Seller/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Seller/LoginWithPhoneNumber.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXExvZ2luV2l0aFBob25lTnVtYmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Seller/RegistrationDone.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXFJlZ2lzdHJhdGlvbkRvbmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Seller/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Shared/Components/MainMenu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXENvbXBvbmVudHNcTWFpbk1lbnVcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Shared/_AdminSidebarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9BZG1pblNpZGViYXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Shared/_IdentityLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9JZGVudGl0eUxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Shared/_InventoryLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9JbnZlbnRvcnlMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Shared/_InventorySidebarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9JbnZlbnRvcnlTaWRlYmFyUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Shared/_ProfileLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Qcm9maWxlTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Shared/_RecordNotFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9SZWNvcmROb3RGb3VuZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Shared/_SellerPanelLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9TZWxsZXJQYW5lbExheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Category/AddBrand.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2F0ZWdvcnlcQWRkQnJhbmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ym04d2enfn
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Admin/Product/ProductDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdFxQcm9kdWN0RGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-i8z01xitjj
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Cart/Payment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydFxQYXltZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-u3xljv623w
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Cart/_CartBodyPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydFxfQ2FydEJvZHlQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-q7n39ov0i3
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Cart/_EmptyCartPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydFxfRW1wdHlDYXJ0UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-bzhvahk2in
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Identity/LoginWithPhoneNumber.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSWRlbnRpdHlcTG9naW5XaXRoUGhvbmVOdW1iZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ru1tqmmptn
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Identity/RegisterLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSWRlbnRpdHlcUmVnaXN0ZXJMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-bp4h6jvu9p
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Inventory/Order/_OrderDetailsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3J5XE9yZGVyXF9PcmRlckRldGFpbHNQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-bnqe6yy7lg
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-2d8w1abph9
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Product/_CommentsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxfQ29tbWVudHNQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-q2azefii18
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Product/_DiscountNotice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxfRGlzY291bnROb3RpY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-6o6p21rtpz
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Product/_OtherVariantsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxfT3RoZXJWYXJpYW50c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-k5uxm49pk8
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Product/_PaginationPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxfUGFnaW5hdGlvblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-hl6yk4cyd2
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Product/_QuestionsAndAnswersPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxfUXVlc3Rpb25zQW5kQW5zd2Vyc1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-2wpcsfbyf8
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Product/_ShareProductPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxfU2hhcmVQcm9kdWN0UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-5c4tp9832j
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Product/_UserList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxfVXNlckxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-0fwr8psoqm
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Profile/Addresses/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVxBZGRyZXNzZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-644tptdlc9
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Profile/Orders/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVxPcmRlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-fqnztl73s4
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Profile/UserHistory/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVxVc2VySGlzdG9yeVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-gjslyg1rbc
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Search/ShowCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VhcmNoXFNob3dDYXRlZ29yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-emxm1vmuvn
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Search/_PaginationPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VhcmNoXF9QYWdpbmF0aW9uUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-1pz87afafb
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Search/_Products.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VhcmNoXF9Qcm9kdWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-m9yp5a3cn8
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/SellerPanel/Product/AddVariant.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyUGFuZWxcUHJvZHVjdFxBZGRWYXJpYW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-vy1vkdzeg6
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/SellerPanel/Product/ProductDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyUGFuZWxcUHJvZHVjdFxQcm9kdWN0RGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-1yw9fwi2ql
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Seller/CreateSeller.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXENyZWF0ZVNlbGxlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-bgjfcag1ic
+
+[D:/MarketKhoone/src/Marketkhoone.Web/Pages/Seller/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXFJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-5ltno2j2v8

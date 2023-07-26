@@ -1,0 +1,12 @@
+D:\MarketKhoone\src\Marketkhoone.Common\obj\Debug\net7.0\MarketKhoone.Common.csproj.AssemblyReference.cache
+D:\MarketKhoone\src\Marketkhoone.Common\obj\Debug\net7.0\MarketKhoone.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\MarketKhoone\src\Marketkhoone.Common\obj\Debug\net7.0\MarketKhoone.Common.AssemblyInfoInputs.cache
+D:\MarketKhoone\src\Marketkhoone.Common\obj\Debug\net7.0\MarketKhoone.Common.AssemblyInfo.cs
+D:\MarketKhoone\src\Marketkhoone.Common\obj\Debug\net7.0\MarketKhoone.Common.csproj.CoreCompileInputs.cache
+D:\MarketKhoone\src\Marketkhoone.Common\bin\Debug\net7.0\MarketKhoone.Common.deps.json
+D:\MarketKhoone\src\Marketkhoone.Common\bin\Debug\net7.0\MarketKhoone.Common.dll
+D:\MarketKhoone\src\Marketkhoone.Common\bin\Debug\net7.0\MarketKhoone.Common.pdb
+D:\MarketKhoone\src\Marketkhoone.Common\obj\Debug\net7.0\MarketKhoone.Common.dll
+D:\MarketKhoone\src\Marketkhoone.Common\obj\Debug\net7.0\refint\MarketKhoone.Common.dll
+D:\MarketKhoone\src\Marketkhoone.Common\obj\Debug\net7.0\MarketKhoone.Common.pdb
+D:\MarketKhoone\src\Marketkhoone.Common\obj\Debug\net7.0\ref\MarketKhoone.Common.dll

@@ -1,0 +1,92 @@
+﻿@page "{phoneNumber}"
+@model LoginWithPhoneNumberModel
+@{
+    ViewData["Title"] = "ورود به سایت";
+    var reSendSmsUrl = @Url.Page("/Identity/LoginWithPhoneNumber", "ReSendUserSmsActivation");
+}
+
+<div class="container"
+     count-down-timer-minute="@Model.LoginWithPhoneNumber.SendSmsLastTimeMinute"
+     count-down-timer-second="@Model.LoginWithPhoneNumber.SendSmsLastTimeSecond">
+    @*  <div class="row d-flex text-center">
+    <div class="alert  mt-3">
+    کد فعال سازی (حالت توسعه)
+    <br />
+    <span id="activation-code-box">@Model.ActivationCode</span>
+    </div>*@
+    <div class="row">
+        <div class="col-lg">
+            <form asp-page="./LoginWithPhoneNumber" autocomplete="off" functionNameToCallInTheEnd="loginWithPhoneNumberInIdentity" method="POST" class="page-account-box public-ajax-form">
+                <input asp-for="LoginWithPhoneNumber.PhoneNumber" />
+                <div class="col-lg-6 col-md-6 col-xs-12 mx-auto">
+                    <div class="ds-userlogin text-center">
+                        <a asp-page="/Index">
+                            <img src="~/images/application/marketKhooneLogo.png" width="120" />
+                        </a>
+                        <div class="account-box mt-1">
+                            <div class="Login-to-account mt-4">
+                                <div class="account-box-content">
+                                    <div class="message-light">
+                                        <div class="massege-light-send">
+                                            برای شماره همراه
+                                            <span>@Model.LoginWithPhoneNumber.PhoneNumber</span>
+                                            کد تایید ارسال گردید.
+                                            <div class="form-edit-number">
+                                                <a asp-page="/Identity/RegisterLogin" class="edit-number-link">ویرایش شماره</a>
+                                            </div>
+                                        </div>
+                                        <div class="account-box-verify-content">
+                                            <div class="form-account">
+                                                <div class="form-account-title">کد پیامک شده را وارد نمایید</div>
+                                                <div class="form-account-row">
+                                                    <div class="form-account-title">
+                                                        <input asp-for="LoginWithPhoneNumber.ActivationCode" class="number-email-input" id="email-phone">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-account-row">
+                                            <div class="text-center mt-3 rem0and9">
+                                                <span>
+                                                    ارسال مجدد کد تا
+                                                    <span id="count-down-timer-box"></span>
+                                                    دیگر
+                                                </span>
+                                                <button id="send-user-activation-sms-box"
+                                                        onclick="reSendActivationCode('@Model.LoginWithPhoneNumber.PhoneNumber', this, '@reSendSmsUrl')"
+                                                        type="button"
+                                                        class="d-none btn btn-default text-info">
+                                                    دریافت مجدد کد تایید
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="account-footer">
+                                            <div class="account-footer">
+                                                <div class="form-row-account">
+                                                    <button class="btn btn-primary btn-login">ثبت‌ نام در مارکت خونه</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+@section CustomScripts{
+    <script src="~/Pages/Identity/LoginWithPhoneNumber.cshtml.js"></script>
+    }
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/lib/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/lib/toastr.js/toastr.min.js"></script>
+    }
+@section Styles{
+    <link rel="stylesheet" href="~/lib/toastr.js/toastr.min.css" />
+    }

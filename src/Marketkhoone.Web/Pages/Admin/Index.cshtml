@@ -1,0 +1,87 @@
+﻿@page
+@model Marketkhoone.Web.Pages.Admin.IndexModel
+@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "داشبورد";
+}
+<div class="row">
+    <div class="col-md-3">
+        <div>
+            <img src="~/images/AdminMainPageImages/product.png" class="AdminMainPageImages" />
+            <div class="align-items-center">
+                <span class="AdminMainPagesImagesText"> محصول در حال فروش :</span>
+                <span>@Model.AdminMainPage.ProductVariantIsSellingNow</span>
+                <br />
+                <span class="AdminMainPagesImagesTextForTotalProducts">تعداد کل: @Model.AdminMainPage.ProductTotalCounts</span>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div>
+            <img src="~/images/AdminMainPageImages/user.png" class="AdminMainPageImages" />
+            <div class="align-items-center">
+                <span class="AdminMainPagesImagesText"> تعداد کاربران :</span>
+                <span>@Model.AdminMainPage.UsersTotalCounts</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-md-3">
+        <div>
+            @if (Model.AdminMainPage.OrdersNotConfirmedCounts > 0)
+            {
+                <img src="~/gif/new-order.gif" class="AdminMainPageGif" />
+            }
+            else
+            {
+                <img src="~/images/AdminMainPageImages/order.png" class="AdminMainPageImages" />
+            }
+            <div class="align-items-center">
+                <span class="AdminMainPagesImagesText">سفارش جدید :</span>
+
+                <span>@Model.AdminMainPage.OrdersNotConfirmedCounts</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-md-3">
+        <div>
+
+            @if (Model.AdminMainPage.CommentsNotConfirmedCounts > 0)
+            {
+                <img src="~/gif/comment.gif" class="AdminMainPageGif" />
+            }
+            else
+            {
+                <img src="~/images/AdminMainPageImages/comment.png" class="AdminMainPageImages" />
+            }
+            <div class="align-items-center">
+                <span class="AdminMainPagesImagesText"> کامنت جدید :</span>
+                <span>@Model.AdminMainPage.CommentsNotConfirmedCounts</span>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-3">
+        <div>
+            @if (Model.AdminMainPage.ReturnProductsCounts > 0)
+            {
+                <img src="~/gif/product-return.gif" class="AdminMainPageGif" />
+            }
+            else
+            {
+                <img src="~/images/AdminMainPageImages/product-return.png" class="AdminMainPageImages" />
+            }
+
+            <div class="align-items-center">
+                <span class="AdminMainPagesImagesText"> درخواست مرجوعی :</span>
+                <span>@Model.AdminMainPage.ReturnProductsCounts</span>
+            </div>
+        </div>
+
+    </div>
+</div>

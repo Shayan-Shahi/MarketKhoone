@@ -1,0 +1,83 @@
+﻿@page
+@model Marketkhoone.Web.Pages.Admin.FeatureConstantValue.IndexModel
+@{
+}
+
+<div class="card text-dark bg-white border-0 shadow">
+    <div class="card-body">
+        <h5 class="card-title">
+            @ViewData["Title"]
+        </h5>
+        <div class="d-grid d-lg-block mb-2">
+            <a asp-page-handler="Add" class="btn btn-outline-primary show-modal-form-button">
+                افزودن مقدار ثابت ویژگی
+            </a>
+        </div>
+        <form class="alert alert-secondary search-form-via-ajax">
+            <input asp-for="FeatureConstantValues.Pagination.CurrentPage" />
+            <input asp-for="FeatureConstantValues.Pagination.PageCount" />
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <h5>
+                جستجو در
+                @ViewData["Title"]
+            </h5>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3 my-2">
+                    <label class="form-label" asp-for="FeatureConstantValues.SearchFeatureConstantValues.CategoryId"></label>
+                    <select class="custom-select2 form-control" asp-for="FeatureConstantValues.SearchFeatureConstantValues.CategoryId" asp-items="Model.FeatureConstantValues.SearchFeatureConstantValues.Categories"></select>
+                    <span class="span-error-message" asp-validation-for="FeatureConstantValues.SearchFeatureConstantValues.CategoryId"></span>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 my-2">
+                    <label class="form-label" asp-for="FeatureConstantValues.SearchFeatureConstantValues.FeatureId"></label>
+                    <select class="custom-select2 form-control" asp-for="FeatureConstantValues.SearchFeatureConstantValues.FeatureId">
+                        <option value="0">انتخاب کنید</option>
+                    </select>
+                    <span class="span-error-message" asp-validation-for="FeatureConstantValues.SearchFeatureConstantValues.FeatureId"></span>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 my-2">
+                    <label class="form-label" asp-for="FeatureConstantValues.SearchFeatureConstantValues.Value"></label>
+                    <input class="form-control" asp-for="FeatureConstantValues.SearchFeatureConstantValues.Value" />
+                    <span class="span-error-message" asp-validation-for="FeatureConstantValues.SearchFeatureConstantValues.Value"></span>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 my-2">
+                    <label class="form-label" asp-for="FeatureConstantValues.SearchFeatureConstantValues.DeletedStatus"></label>
+                    <select class="form-select" asp-for="FeatureConstantValues.SearchFeatureConstantValues.DeletedStatus" asp-items="Html.GetEnumSelectList<MarketKhoone.ViewModels.DeletedStatus>()"></select>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 my-2">
+                    <label class="form-label" asp-for="FeatureConstantValues.SearchFeatureConstantValues.Sorting"></label>
+                    <select class="form-select" asp-for="FeatureConstantValues.SearchFeatureConstantValues.Sorting" asp-items="Html.GetEnumSelectList<MarketKhoone.ViewModels.FeatureConstantValues.SortingBrands>()"></select>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 my-2">
+                    <label class="form-label" asp-for="FeatureConstantValues.SearchFeatureConstantValues.SortingOrder"></label>
+                    <select class="form-select" asp-for="FeatureConstantValues.SearchFeatureConstantValues.SortingOrder" asp-items="Html.GetEnumSelectList<MarketKhoone.ViewModels.SortingOrder>()"></select>
+                </div>
+                <div class="col-12 my-2">
+                    <div class="d-grid d-lg-block">
+                        <button type="submit" class="btn btn-primary d-inline-flex align-items-center search-form-submit-button" disabled>
+                            جستجو ...
+                            <span class="spinner-border spinner-border-sm d-none ms-2"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="data-table-place">
+                <div class="text-center data-table-loading">
+                    <img src="~/images/application/loading.gif" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/lib/select2/js/select2.min.js"></script>
+    <script src="~/lib/select2/js/i18n/fa.min.js"></script>
+}
+@section CustomScripts{
+    <script src="~/Pages/Admin/FeatureConstantValue/Index.cshtml.js"></script>
+}
+@section Styles{
+    <link rel="stylesheet" href="~/lib/select2/css/select2.min.css" />
+    <link rel="stylesheet" href="~/lib/select2-bootstrap-5-theme/select2-bootstrap-5-theme.rtl.min.css" />
+}

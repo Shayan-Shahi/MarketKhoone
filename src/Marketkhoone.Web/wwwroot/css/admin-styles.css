@@ -1,0 +1,100 @@
+﻿#sidebar a {
+    color: white;
+
+}
+#sidebar i {
+    font-size: 19px;
+   
+}
+.colorForIcon {
+    color: pink !important;
+}
+#sidebar a:hover {
+    background-color: grey;
+    border-radius: 10px;
+}
+
+#sidebar li {
+    margin: 5px 0;
+  
+}
+
+#sidebar div i {
+    margin-left: 7px;
+}
+
+#sidebar {
+    height: calc(100vh - 82px);
+    transition: transform .3s;
+    z-index: 999;
+    overflow-y: scroll;
+}
+
+@media screen and (max-width:991px) {
+    #sidebar {
+        height: calc(100vh - 56px);
+   
+    }
+}
+
+#sidebar .nav-link i.bi.bi-chevron-left {
+    transform: rotate(-90deg);
+    transition: all .3s;
+   
+}
+#sidebar ul {
+    margin: 2px;
+    color: red;
+}
+#sidebar .nav-link.collapsed i.bi.bi-chevron-left {
+    transform: rotate(0deg);
+    padding: 5px;
+
+}
+
+#sidebar.collapse.show {
+    transform: translate(0, 0);
+    
+}
+
+#sidebar.collapsing {
+    transform: translate(100%, 0);
+}
+
+#menus-icon {
+    transition: all .3s;
+    transform: rotate(90deg);
+}
+
+#menus-icon.collapsed {
+    transform: rotate(0deg);
+}
+
+#main-content {
+    transition: all .3s;
+   
+}
+
+.AdminMainPageImages {
+    width: 110px;
+    margin-top: 100px;
+    margin-right: 30px;
+    padding-bottom: 10px;
+}
+.AdminMainPageGif {
+    width: 140px;
+    margin-top: 80px;
+    margin-right: 10px;
+    
+}
+.AdminMainPagesImagesText {
+    font-weight: bold;
+    margin-right: 30px;
+}
+.AdminMainPagesImagesTextForTotalProducts {
+    margin-right: 25px;
+}
+.open {
+    display: block;
+    /* add any other styles for open items here */
+}

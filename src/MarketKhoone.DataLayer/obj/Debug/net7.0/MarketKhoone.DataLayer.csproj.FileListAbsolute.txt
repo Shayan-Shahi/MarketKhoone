@@ -1,0 +1,17 @@
+D:\MarketKhoone\src\Marketkhoone.DataLayer\obj\Debug\net7.0\MarketKhoone.DataLayer.csproj.AssemblyReference.cache
+D:\MarketKhoone\src\Marketkhoone.DataLayer\obj\Debug\net7.0\MarketKhoone.DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\MarketKhoone\src\Marketkhoone.DataLayer\obj\Debug\net7.0\MarketKhoone.DataLayer.AssemblyInfoInputs.cache
+D:\MarketKhoone\src\Marketkhoone.DataLayer\obj\Debug\net7.0\MarketKhoone.DataLayer.AssemblyInfo.cs
+D:\MarketKhoone\src\Marketkhoone.DataLayer\obj\Debug\net7.0\MarketKhoone.DataLayer.csproj.CoreCompileInputs.cache
+D:\MarketKhoone\src\Marketkhoone.DataLayer\bin\Debug\net7.0\MarketKhoone.DataLayer.deps.json
+D:\MarketKhoone\src\Marketkhoone.DataLayer\bin\Debug\net7.0\MarketKhoone.DataLayer.dll
+D:\MarketKhoone\src\Marketkhoone.DataLayer\bin\Debug\net7.0\MarketKhoone.DataLayer.pdb
+D:\MarketKhoone\src\Marketkhoone.DataLayer\bin\Debug\net7.0\MarketKhoone.Common.dll
+D:\MarketKhoone\src\Marketkhoone.DataLayer\bin\Debug\net7.0\MarketKhoone.Entities.dll
+D:\MarketKhoone\src\Marketkhoone.DataLayer\bin\Debug\net7.0\MarketKhoone.Entities.pdb
+D:\MarketKhoone\src\Marketkhoone.DataLayer\bin\Debug\net7.0\MarketKhoone.Common.pdb
+D:\MarketKhoone\src\Marketkhoone.DataLayer\obj\Debug\net7.0\MarketKhoone.DataLayer.csproj.CopyComplete
+D:\MarketKhoone\src\Marketkhoone.DataLayer\obj\Debug\net7.0\MarketKhoone.DataLayer.dll
+D:\MarketKhoone\src\Marketkhoone.DataLayer\obj\Debug\net7.0\refint\MarketKhoone.DataLayer.dll
+D:\MarketKhoone\src\Marketkhoone.DataLayer\obj\Debug\net7.0\MarketKhoone.DataLayer.pdb
+D:\MarketKhoone\src\Marketkhoone.DataLayer\obj\Debug\net7.0\ref\MarketKhoone.DataLayer.dll

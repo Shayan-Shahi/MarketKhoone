@@ -1,0 +1,32 @@
+﻿@page
+@model Marketkhoone.Web.Pages.IndexModel
+@{
+}
+
+<h1>Main Page</h1>
+<a asp-page="Admin/Index" class="btn btn-primary">Admin Panel</a>
+
+
+<br/>
+<a asp-page="Seller/Register" class="btn btn-primary">Seller</a>
+
+<br/>
+
+<a asp-page="Seller/Register" class="btn btn-primary">Register Seller</a>
+
+<br />
+
+<a asp-page="SellerPanel/Index" class="btn btn-primary">Seller Panel</a>
+
+<br />
+<a asp-page="Inventory/Index" class="btn btn-primary">Inventory</a>
+
+<br />
+
+<a class="btn btn-primary" asp-page="/Product/Index"
+   asp-route-productCode="1" asp-route-slug="Test">Product 1</a>
+<br />
+
+<a asp-page="Identity/registerlogin" class="btn btn-primary">Identity register login</a>
+
+

@@ -1,0 +1,40 @@
+﻿@page
+@model Marketkhoone.Web.Pages.Seller.RegistrationDoneModel
+@{
+    ViewData["Title"] = "فروشنده عزیز، از ثبت نام شما ممنونیم";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg">
+            <section class="page-account-box">
+                <div class="col-lg-6 col-md-6 col-xs-12 mx-auto">
+                    <div class="ds-userlogin text-center">
+                        <a asp-page="/Index">
+                            <img src="~/images/application/marketKhooneLogo.png" width="130" />
+                        </a>
+                        <div class="account-box mt-0">
+                            <div class="Login-to-account mt-2">
+                                <div class="account-box-content">
+                                    <h4 class="mb-2">به جمع فروشندگان مارکت خونه خوش آمدید</h4>
+                                    <form asp-page="/SellerPanel/Index" class="form-account text-center">
+                                        <div class="user-account-welcome">
+                                            <img src="~/images/application/sell.gif" width="120">
+                                        </div>
+                                        <div class="made-account">
+                                            <h2>شما با موفقیت به عنوان فروشنده سایت مارکت خونه انتخاب شدید</h2>
+                                            <p>اکنون میتوانید با وارد شدن به پنل کاربری خود، &zwnj;مدارک فروشندگی خود را برای تایید &zwnj;کارشناسان مارکت خونه در پنل خود آپلود کنید.</p>
+                                        </div>
+                                        <div class="form-row-account">
+                                            <button class="btn btn-primary btn-login">ورود به پنل کاربری </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>

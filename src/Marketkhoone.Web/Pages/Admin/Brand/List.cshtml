@@ -1,0 +1,183 @@
+﻿@using MarketKhoone.Common.Helpers
+@using MarketKhoone.Entities
+@model MarketKhoone.ViewModels.Brands.ShowBrandsViewModel
+@if (Model.Brands.Count > 0 )
+{
+    <div class="table-responsive data-table-body">
+        <table class="table table-bordered table-striped table-hover">
+            <thead class="table-light">
+                <tr>
+                    <th class="text-center">@Html.DisplayNameFor(x => x.Brands[0].Id)</th>
+                    <th class="text-center">@Html.DisplayNameFor(x => x.Brands[0].TitleFa)</th>
+                    <th class="text-center">@Html.DisplayNameFor(x => x.Brands[0].TitleEn)</th>
+                    <th class="text-center">@Html.DisplayNameFor(x => x.Brands[0].IsIranianBrand)</th>
+                    <th class="text-center">@Html.DisplayNameFor(x => x.Brands[0].LogoPicture)</th>
+                    <th class="text-center">@Html.DisplayNameFor(x => x.Brands[0].BrandRegistrationPicture)</th>
+                    <th class="text-center">@Html.DisplayNameFor(x => x.Brands[0].JudiciaryLink)</th>
+                    <th class="text-center">@Html.DisplayNameFor(x => x.Brands[0].BrandLinkEn)</th>
+                    <th class="text-center">@Html.DisplayNameFor(x => x.Brands[0].IsConfirmed)</th>
+                    <th class="text-center">عملیات</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var brand in Model.Brands)
+                {
+                    <tr>
+                        <td>@brand.Id</td>
+                        <td>@brand.TitleFa</td>
+                        <td>@brand.TitleEn</td>
+                        <td class="text-center">
+                            @if (brand.IsIranianBrand)
+                            {
+                                <img src="~/images/application/iran.png" width="44" alt="ایرانی" />
+                            }
+                            else
+                            {
+                                <img src="~/images/application/global.png" width="44" alt="خارجی" />
+                            }
+                        </td>
+                        <td class="text-center">
+                            @if (brand.LogoPicture is null)
+                            {
+                                @:ثبت نشده است
+                            }
+                            else
+                            {
+                                <img src="~/images/brandsLogo/@brand.LogoPicture?height=12&&width=20" class="rounded" alt="لوگوی برند" width="84" />
+                            }
+                        </td>
+                        <td class="text-center">
+                            @if (brand.BrandRegistrationPicture is null)
+                            {
+                                @:ثبت نشده است
+                            }
+                            else
+                            {
+                                <img src="~/images/brandRegistrationPicture/@brand.BrandRegistrationPicture" class="rounded"  alt="برگه ثبت برند" width="84" />
+                            }
+                        </td>
+                        <td>
+                            @if (brand.JudiciaryLink is null)
+                            {
+                                @:ثبت نشده است
+                            }
+                            else
+                            {
+                                <a href="@brand.JudiciaryLink" target="_blank">@brand.JudiciaryLink</a>
+                            }
+                        </td>
+                        <td>
+                            @if (brand.BrandLinkEn is null)
+                            {
+                                @:ثبت نشده است
+                            }
+                            else
+                            {
+                                <a href="@brand.BrandLinkEn" target="_blank">@brand.BrandLinkEn</a>
+                            }
+                        </td>
+                        <td>
+                            @if (brand.IsConfirmed )
+                            {
+                                <div class="d-grid">
+                                    <span class="btn btn-success" type="button">فعال</span>
+                                </div>
+                            }
+                            else 
+                            {
+                                <div class="d-grid">
+                                    <span class="btn btn-warning" type="button">غیر فعال</span>
+                                </div>
+                            }
+                        </td>
+                        <td>
+                     
+                                <div class="btn-group">
+                                    <a custom-title="ویرایش برند &quot; @brand.TitleFa - @brand.TitleEn &quot;" asp-page-handler="Edit" asp-route-id="@brand.Id" class="btn btn-warning show-modal-form-button" functionNameToCallInTheEnd="editBrandFunction">
+                                        ویرایش
+                                    </a>
+                                </div>
+
+
+                                <div class="btn-group">
+                                    <a asp-page-handler="BrandDetails" asp-route-brandId="@brand.Id" class="btn btn-primary show-modal-form-button">
+                                        جزییات برند
+                                    </a>
+                                </div>
+
+                                <div class="btn-group">
+                                    <form method="post" asp-page-handler="ConfirmBrand" class="public-ajax-form"
+                                          functionNameToCallInTheEnd="confirmFunction">
+                                        <input type="hidden" name="id" value="@brand.Id"/>
+                                        <button class="btn btn-success btn-confirm-brand " type="button">تایید کردن</button>
+                                    </form>
+                                </div>
+                               
+
+                                @if (brand.IsDeleted)
+                                {
+                                    <form asp-page-handler="Restore" class="d-inline-block">
+                                        <input type="hidden" name="elementId" value="@brand.Id"/>
+                                        <button custom-message="آیا مطمئن به بازگردانی هستید؟" type="button" class="btn btn-warning delete-row-button">بازگردانی</button>
+                                    </form>
+                                }
+                                else
+                                {
+                                    <div class="btn-group">
+                                        <form functionNameToCallInTheEnd="confirmRejectRemoveMessageFunction"
+                                              asp-page-handler="DeleteBrand" class="d-inline-block">
+                                            <input type="hidden" name="Id" value="@brand.Id"/>
+                                            <btton type="button" class="btn btn-danger delete-row-button">حذف</btton>
+                                        </form>
+                                    </div>
+                                 
+                                }
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <!-- Pagination -->
+    <div class="btn-toolbar my-3 d-flex justify-content-center" id="main-pagianation">
+            <div class="btn-group me-2">
+                @if (Model.Pagination.CurrentPage != 1)
+                {
+                    <button value="1" type="button" class="btn btn-outline-primary">
+                        <i class="bi bi-chevron-double-right"></i>
+                    </button>
+                    <button value="@(Model.Pagination.CurrentPage - 1)" type="button" class="btn btn-outline-primary">قبلی</button>
+                }
+                @for (int counter = Model.Pagination.StartPage; counter <= Model.Pagination.EndPage; counter++)
+                {
+                    <button value="@counter" type="button"
+                    class="@(counter == Model.Pagination.CurrentPage ? "active " : string.Empty)btn btn-outline-primary">
+                        @counter
+                    </button>
+                }
+                @if (Model.Pagination.CurrentPage != Model.Pagination.PagesCount)
+                {
+                    <button value="@(Model.Pagination.CurrentPage + 1)" type="button" class="btn btn-outline-primary">بعدی</button>
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="کل صفحات @Model.Pagination.PagesCount" value="@Model.Pagination.PagesCount" type="button" class="btn btn-outline-primary">
+                        <i class="bi bi-chevron-double-left"></i>
+                        @Model.Pagination.PagesCount
+                    </button>
+                }
+            </div>
+            <div>
+                <select id="page-count-selectbox" asp-for="Pagination.PageCount" class="form-select" asp-items="Html.GetEnumSelectList<MarketKhoone.ViewModels.PageCount>()"></select>
+            </div>
+        </div>
+        <div class="col-10 col-sm-6 col-md-4 col-xl-3 m-auto">
+            <div class="input-group">
+                <input id="page-number-input" value="@Model.Pagination.CurrentPage" min="1" max="@Model.Pagination.PagesCount" type="number" class="form-control rtl-direction" placeholder="شماره صفحه">
+                <button id="go-to-page-button" class="btn btn-outline-primary" type="submit">برو به صفحه</button>
+            </div>
+        </div>
+        <!-- End pagination -->
+</div>
+}
+else
+{
+    <partial name="_RecordNotFound" />
+}

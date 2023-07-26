@@ -1,0 +1,59 @@
+﻿@page
+@model Marketkhoone.Web.Pages.Identity.RegisterLoginModel
+@{
+    ViewData["Title"] = "ورود / ثبت نام";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg">
+            <form id="register-login-form" method="post" class="form-account text-right">
+            <section class="page-account-box">
+                <div class="col-lg-6 col-md-6 col-xs-12 mx-auto">
+                        <div class="ds-userlogin text-center">
+                        <a asp-page="/Index">
+                            <img src="~/images/application/marketKhooneLogo.png" width="120" />
+                        </a>
+                            <div class="account-box  mt-1">
+                            <div class="Login-to-account mt-4">
+                                <div class="account-box-content">
+                                    <h4>ثبت نام / ورود به مارکت خونه</h4>
+                                    <div class="account-box-headline">
+                                    </div>
+
+                                    <div class="text-danger" asp-validation-summary="All"></div>
+                                    <div class="form-account-title mt-5">
+                                        <label asp-for="RegisterLogin.PhoneNumberOrEmail"> شماره موبایل</label>
+                                        <input asp-for="RegisterLogin.PhoneNumberOrEmail" class="number-email-input">
+                                    </div>
+                                    <div class="form-account-title mt-1">
+                                        <input class="remember-me" asp-for="RegisterLogin.AcceptToTheTerms" type="checkbox" id="register-login-accept-to-the-terms">
+                                        <label class="remember-me" asp-for="RegisterLogin.AcceptToTheTerms"> <a href="#">حریم خصوصی و </a><a href="#">شرایط قوانین </a>استفاده از سایت مارکت خونه را مطالعه نموده و با کلیه موارد آن موافقم.
+                                        </label>
+
+                                    </div>
+                                    <div class="form-row-account mt-5">
+                                        <button class="btn btn-primary btn-register">ورود با رمز یک بار مصرف</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+             
+            </section>
+            </form>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
+@section CustomScripts
+{
+    <script src="~/Pages/Identity/RegisterLogin.cshtml.js"></script>
+
+}

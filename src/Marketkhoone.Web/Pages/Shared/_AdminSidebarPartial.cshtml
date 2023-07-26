@@ -1,0 +1,294 @@
+﻿<div id="sidebar" class="col-6 col-sm-4 col-lg-2 bg-dark collapse show position-fixed">
+    <ul class="nav d-flex flex-column">
+        <li class="nav-item">
+            <a asp-page="/Admin/Index" class="d-flex justify-content-between nav-link">
+                <div>
+                    <i class="bi bi-house-fill"></i>
+                    خانه
+                </div>
+            </a>
+        <li class="nav-item">
+            <a href="#sub-menu1" class="d-flex justify-content-between collapsed nav-link "
+               data-bs-toggle="collapse">
+                <div>
+                    <i class="bi bi-window-fullscreen"></i>
+                    مدیریت صفحه اصلی 
+                </div>
+                <i class="bi bi-chevron-left"></i>
+            </a>
+            <div class="collapse bg-dark rounded" id="sub-menu1">
+                <ul class="nav">
+                    <li class="nav-item" >
+                        <a asp-page="/Admin/Category/Index" class="nav-link colorForIcon ">
+                            <i class="bi bi-aspect-ratio-fill"></i>
+                            <span>بنرها</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse bg-dark rounded" id="sub-menu1">
+                <ul class="nav">
+                    <li class="nav-item ">
+                        <a asp-page="/Admin/Category/Index" class="nav-link colorForIcon">
+                            <i class="bi bi-sliders"></i>
+                            اسلایدرها
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    <li class="nav-item">
+        <a href="#sub-menu2" class="d-flex justify-content-between collapsed nav-link "
+           data-bs-toggle="collapse">
+            <div>
+                <i class="bi bi-border-all"></i>
+                دسته بندی ها
+            </div>
+            <i class="bi bi-chevron-left"></i>
+        </a>
+        <div class="collapse bg-dark rounded" id="sub-menu2">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#sub-menu11" class="d-flex justify-content-between collapsed nav-link"
+                       data-bs-toggle="collapse">
+                        <div>
+                            <i class="bi bi-card-list"></i>
+                            ویژگی های دسته بندی
+                        </div>
+                        <i class="bi bi-chevron-left"></i>
+                    </a>
+                    <div class="collapse bg-dark rounded" id="sub-menu11">
+                        <ul class="nav">
+                            <li class="nav-item ">
+                                <a asp-page="/Admin/Feature/Index" class="nav-link colorForIcon">
+                                    <i class="bi bi-bar-chart-fill"></i>
+                                    نمایش ویژگی های دسته بندی
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse bg-dark rounded" id="sub-menu2">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#sub-menu10" class="d-flex justify-content-between collapsed nav-link"
+                           data-bs-toggle="collapse">
+                            <div>
+                                <i class="bi bi-cc-square-fill"></i>
+                                مقادیر ویژگی دسته بندی
+                            </div>
+                            <i class="bi bi-chevron-left"></i>
+                        </a>
+                        <div class="collapse bg-dark rounded" id="sub-menu10">
+                            <ul class="nav">
+                                <li class="nav-item ">
+                                    <a asp-page="/Admin/FeatureConstantValue/Index" class="nav-link colorForIcon">
+                                        <i class="bi bi-bar-chart-fill"></i>
+                                        نمایش مقادیر
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+        </div>
+       
+        <div class="collapse bg-dark rounded" id="sub-menu2">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#sub-menu12" class="d-flex justify-content-between collapsed nav-link"
+                       data-bs-toggle="collapse">
+                        <div>
+                                <i class="bi bi-bricks"></i>
+                            تنوع دسته بندی 
+                        </div>
+                        <i class="bi bi-chevron-left"></i>
+                    </a>
+                    <div class="collapse bg-dark rounded" id="sub-menu12">
+                        <ul class="nav">
+                            <li class="nav-item ">
+                                <a asp-page="/Admin/Variant/Index" class="nav-link colorForIcon">
+                                    <i class="bi bi-bar-chart-fill"></i>
+                                     نمایش تنوع دسته بندی ها
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse bg-dark rounded" id="sub-menu2">
+            <ul class="nav">
+                <li class="nav-item ">
+                    <a asp-page="/Admin/Category/Index" class="nav-link colorForIcon">
+                        <i class="bi bi-bar-chart-fill"></i>
+                        نمایش تمامی دسته بندی ها
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </li>
+    <li class="nav-item ">
+            <a href="#sub-menu5 " class="d-flex justify-content-between collapsed nav-link"
+               data-bs-toggle="collapse">
+                <div>
+                    <i class="bi bi-bootstrap-fill"></i>
+                    برند ها
+                </div>
+                <i class="bi bi-chevron-left"></i>
+            </a>
+            <div class="collapse bg-dark rounded" id="sub-menu5">
+                <ul class="nav">
+                    <li class="nav-item ">
+                        <a asp-page="/Admin/Brand/Index" class="nav-link colorForIcon">
+                            <i class="bi bi-bar-chart-fill"></i>
+                            نمایش تمامی برند ها
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    <li class="nav-item ">
+            <a href="#sub-menu6" class="d-flex justify-content-between collapsed nav-link"
+               data-bs-toggle="collapse">
+                <div>
+                    <i class="bi bi-receipt-cutoff"></i>
+                    مدیریت محصولات
+                </div>
+                <i class="bi bi-chevron-left"></i>
+            </a>
+        <div class="collapse bg-dark rounded" id="sub-menu6">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a asp-page="/Admin/Product/Create" class="nav-link colorForIcon">
+                        <i class="bi bi-box-seam-fill"></i>
+                        افزودن محصول 
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse bg-dark rounded" id="sub-menu6">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a asp-page="/Admin/Product/Index" class="nav-link colorForIcon">
+                            <i class="bi bi-bar-chart-fill"></i>
+                        نمایش محصولات 
+                    </a>
+                </li>
+            </ul>
+        </div>
+            <div class="collapse bg-dark rounded" id="sub-menu6">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a asp-page="/Admin/Feature/Index" class="nav-link colorForIcon">
+                            <i class="bi bi-bag-heart-fill"></i>
+                            محصولات شگفت انگیز
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse bg-dark rounded" id="sub-menu6">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a asp-page="/Admin/Feature/Index" class="nav-link colorForIcon">
+                            <i class="bi bi-question-square-fill"></i>
+                            پرسش های محصولات
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse bg-dark rounded" id="sub-menu6">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a asp-page="/Admin/Feature/Index" class="nav-link colorForIcon">
+                            <i class="bi bi-chat-left-dots-fill"></i>
+                            کامنت های محصولات
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse bg-dark rounded" id="sub-menu6">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a asp-page="/Admin/ProductShortLink/Index" class="nav-link colorForIcon">
+                            <i class="bi bi-link"></i>
+                            لینک کوتاه محصولات
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a href="#sub-menu7" class="d-flex justify-content-between collapsed nav-link"
+               data-bs-toggle="collapse">
+                <div>
+                    <i class="bi bi-cart-check-fill"></i>
+                    مدیریت سفارشات
+                </div>
+                <i class="bi bi-chevron-left"></i>
+            </a>
+            <div class="collapse bg-dark rounded" id="sub-menu7">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a asp-page="/Admin/Feature/Index" class="nav-link colorForIcon">
+                            <i class="bi bi-card-checklist"></i>
+                            لیست سفارشات
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse bg-dark rounded" id="sub-menu7">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a asp-page="/Admin/Feature/Index" class="nav-link colorForIcon">
+                            <i class="bi bi-cart-x-fill"></i>
+                            لیست مرجوعی ها
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    <li class="nav-item ">
+        <a href="#sub-menu10" class="d-flex justify-content-between collapsed nav-link"
+           data-bs-toggle="collapse">
+            <div>
+                <i class="bi bi-folder-symlink-fill"></i>
+                فروشنده ها
+            </div>
+            <i class="bi bi-chevron-left"></i>
+        </a>
+        <div class="collapse bg-dark rounded" id="sub-menu10">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a asp-page="/Admin/Seller/Index" class="nav-link colorForIcon">
+                        <i class="bi bi-bar-chart-fill"></i>
+                        نمایش فروشندگان 
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </li>
+        <li class="nav-item ">
+            <a href="#sub-menu11" class="d-flex justify-content-between collapsed nav-link"
+               data-bs-toggle="collapse">
+                <div>
+                    <i class="bi bi-folder-symlink-fill"></i>
+                    گارانتی ها
+                </div>
+                <i class="bi bi-chevron-left"></i>
+            </a>
+            <div class="collapse bg-dark rounded" id="sub-menu11">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a asp-page="/Admin/Guarantee/Index" class="nav-link colorForIcon">
+                            <i class="bi bi-bar-chart-fill"></i>
+                            نمایش گارانتی ها
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>

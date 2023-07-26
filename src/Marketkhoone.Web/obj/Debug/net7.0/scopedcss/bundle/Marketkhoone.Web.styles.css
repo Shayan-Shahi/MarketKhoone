@@ -1,0 +1,140 @@
+/* _content/Marketkhoone.Web/Pages/Admin/Category/AddBrand.cshtml.rz.scp.css */
+#selected-brands-box[b-ym04d2enfn] {
+     overflow-y: auto;
+     min-height: 46px;
+     max-height: 184px;
+ }
+/* _content/Marketkhoone.Web/Pages/Admin/Product/ProductDetails.cshtml.rz.scp.css */
+.product-videos-managing-sellers[b-i8z01xitjj] {
+    width: 200px !important;
+    vertical-align: middle;
+}
+/* _content/Marketkhoone.Web/Pages/Cart/Payment.cshtml.rz.scp.css */
+body[b-u3xljv623w] {
+}
+/* _content/Marketkhoone.Web/Pages/Cart/_CartBodyPartial.cshtml.rz.scp.css */
+body[b-q7n39ov0i3] {
+}
+/* _content/Marketkhoone.Web/Pages/Cart/_EmptyCartPartial.cshtml.rz.scp.css */
+body[b-bzhvahk2in] {
+}
+/* _content/Marketkhoone.Web/Pages/Identity/LoginWithPhoneNumber.cshtml.rz.scp.css */
+#login-register-text[b-ru1tqmmptn] {
+    font-weight: bold;
+}
+
+#login-box[b-ru1tqmmptn] {
+    margin-top: 9rem;
+}
+
+[b-ru1tqmmptn] img#register-login-picture {
+    width: 140px;
+}
+/* _content/Marketkhoone.Web/Pages/Identity/RegisterLogin.cshtml.rz.scp.css */
+#login-register-text[b-bp4h6jvu9p] {
+    font-weight: bold;
+}
+
+#login-box[b-bp4h6jvu9p] {
+    margin-top: 9rem;
+}
+
+[b-bp4h6jvu9p] img#register-login-picture {
+    width: 140px;
+}
+/* _content/Marketkhoone.Web/Pages/Inventory/Order/_OrderDetailsPartial.cshtml.rz.scp.css */
+body[b-bnqe6yy7lg] {
+}
+/* _content/Marketkhoone.Web/Pages/Product/Index.cshtml.rz.scp.css */
+@page
+@model Marketkhoone.Web.Pages.Product.IndexModel
+@{
+}
+/* _content/Marketkhoone.Web/Pages/Product/_CommentsPartial.cshtml.rz.scp.css */
+body[b-q2azefii18] {
+}
+/* _content/Marketkhoone.Web/Pages/Product/_DiscountNotice.cshtml.rz.scp.css */
+body[b-6o6p21rtpz] {
+}
+/* _content/Marketkhoone.Web/Pages/Product/_OtherVariantsPartial.cshtml.rz.scp.css */
+
+.cart-body-items-for-other-sellers .count-down-timer[b-k5uxm49pk8] {
+    line-height: 18px;
+}
+/* _content/Marketkhoone.Web/Pages/Product/_PaginationPartial.cshtml.rz.scp.css */
+body[b-hl6yk4cyd2] {
+}
+/* _content/Marketkhoone.Web/Pages/Product/_QuestionsAndAnswersPartial.cshtml.rz.scp.css */
+body[b-2wpcsfbyf8] {
+}
+/* _content/Marketkhoone.Web/Pages/Product/_ShareProductPartial.cshtml.rz.scp.css */
+/* Product share buttons */
+
+.product-share-buttons a[b-5c4tp9832j] {
+    width: 49%;
+}
+
+/* End product share buttons */
+/* _content/Marketkhoone.Web/Pages/Product/_UserList.cshtml.rz.scp.css */
+body[b-0fwr8psoqm] {
+}
+/* _content/Marketkhoone.Web/Pages/Profile/Addresses/Index.cshtml.rz.scp.css */
+.address-action-box-in-profile-comment ul > li:hover[b-644tptdlc9] {
+    background-color: #eeeeee;
+}
+
+.address-title-in-prfile-address[b-644tptdlc9] {
+    line-height: 2;
+}
+
+.address-item-profile-address:not(:last-child)[b-644tptdlc9] {
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+/* _content/Marketkhoone.Web/Pages/Profile/Orders/Index.cshtml.rz.scp.css */
+/* _content/Marketkhoone.Web/Pages/Profile/UserHistory/Index.cshtml.rz.scp.css */
+body[b-gjslyg1rbc] {
+}
+/* _content/Marketkhoone.Web/Pages/Search/ShowCategory.cshtml.rz.scp.css */
+body[b-emxm1vmuvn] {
+}
+/* _content/Marketkhoone.Web/Pages/Search/_PaginationPartial.cshtml.rz.scp.css */
+body[b-1pz87afafb] {
+}
+/* _content/Marketkhoone.Web/Pages/Search/_Products.cshtml.rz.scp.css */
+body[b-m9yp5a3cn8] {
+}
+/* _content/Marketkhoone.Web/Pages/SellerPanel/Product/AddVariant.cshtml.rz.scp.css */
+#all-variant-box[b-vy1vkdzeg6] {
+    max-height: 158px;
+    overflow-y: auto;
+}
+/* _content/Marketkhoone.Web/Pages/SellerPanel/Product/ProductDetails.cshtml.rz.scp.css */
+body[b-1yw9fwi2ql] {
+}
+/* _content/Marketkhoone.Web/Pages/Seller/CreateSeller.cshtml.rz.scp.css */
+#seller-contract[b-bgjfcag1ic] {
+     height: 300px;
+ }
+.text-color-for-place-holder[b-bgjfcag1ic] {
+    color: red !important;
+}
+/* _content/Marketkhoone.Web/Pages/Seller/Register.cshtml.rz.scp.css */
+#register-seller-right-side[b-5ltno2j2v8] {
+     background: #e6e6e6;
+ }
+
+#register-seller-right-side .border-end[b-5ltno2j2v8] {
+    border-left-width: 3px !important;
+}
+
+@media only screen and (min-width: 768px) {
+    #register-seller-right-side[b-5ltno2j2v8] {
+        height: 100vh;
+    }
+
+    .over-flow-scroll-y[b-5ltno2j2v8] {
+        overflow-y: scroll;
+    }
+}

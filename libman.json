@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "toastr.js@2.1.4",
+      "destination": "lib\\toastr.js"
+    },
+    {
+      "library": "material-components-web@14.0.0",
+      "destination": "lib\\material-components-web"
+    },
+    {
+      "library": "material-design-icons@4.0.0",
+      "destination": "lib\\material-design-icons"
+    },
+    {
+      "provider": "jsdelivr",
+      "library": "js-image-zoom@0.7.0",
+      "destination": "lib\\js-image-zoom"
+    }
+  ]
+}

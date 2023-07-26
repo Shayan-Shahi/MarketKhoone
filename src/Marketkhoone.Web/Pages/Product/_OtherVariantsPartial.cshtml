@@ -1,0 +1,122 @@
+﻿@model List<MarketKhoone.ViewModels.Products.ProductVariantForProductInfoViewModel>
+@{
+    var groupedVariants = Model.GroupBy(x => x.VariantValue);
+    var variantCount = 1;
+}
+<!-- Other variants -->
+
+
+    <div class="post-item-cart">
+        <div class=" post-item-cart content-page" >
+            <div class="cart-form">
+                <p>سایر فروشندگان </p>
+
+                @foreach (var variants in groupedVariants)
+                {
+
+                    <table variant-value="@variants.First().VariantValue"
+                        class="table-cart cart table table-borderless@(variantCount++ == 1?  string.Empty :" d-none" )">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="product-cart-name text-center">فروشنده</th>
+                                <th scope="col" class="product-cart-price text-center">گارانتی</th>
+                                <th scope="col" class="product-cart-quantity text-center">قیمت</th>
+                                <th scope="col" class="product-cart-quantity text-center"> قیمت با تخفیف </th>
+                                <th scope="col" class="product-cart-quantity text-center">امتیاز </th>
+                                <th scope="col" class="product-cart-quantity"></th>
+                            </tr>
+                        </thead>
+                        <tbody class="cart-body-items-for-other-sellers">
+                            @foreach (var variant in variants)
+                            {
+                                <tr free-delivery="@(variant.Price >= 500000 ? "true" : "false")" id="other-sellers-table">
+                                    <th scope="row" class="product-cart-name text-center">
+                                        <div class="product-title">
+                                            <img src="~/images/seller-logos/@variant.SellerLogo" width="65px">
+                                            @variant.SellerShopName
+                                        </div>
+                                    </th>
+                                    <td class="product-cart-quantity text-center">
+                                    <div class="product-title persian-numbers">
+                                            @variant.GuaranteeFullTitle
+                                        </div>
+                                    </td>
+                                    <td class="product-cart-price text-center">
+                                        <div class="@(variant.IsDiscountActive ? " d-none" : string.Empty)">
+                                            <span class="product-name">
+                                                <span class="amount">
+                                                    @variant.Price.ToString("0,#")
+                                                    <span>تومان</span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                      
+                                        <div class="row justify-content-center @(variant.IsDiscountActive ? string.Empty : " d-none")">
+                                            <span class="text-decoration-line-through text-custom-grey rem14px me-2 persian-numbers">
+                                                @variant.Price.ToString("0,#")
+                                                <span>تومان</span>
+                                                <span class="badge rounded-pill bg-danger discount-badge-single-page-product">@variant.OffPercentage% </span>
+                                            </span>
+                                           
+                                           
+                                        </div>
+                                       
+                                    </td>
+                                    <td class="product-cart-quantity text-center">
+                                       
+                                        <div class="row justify-content-center @(variant.IsDiscountActive ? string.Empty : " d-none")">
+                                            <span class="amount">
+                                                @variant.FinalPrice.ToString("0,#") تومان
+                                                       
+                                            </span>
+
+                                        <span class="product-count-down-timer fw-bold count-down-timer">
+                                                @variant.EndDateTime
+                                            </span>
+                                        </div>
+                                        <div class="row justify-content-center @(variant.IsDiscountActive ? " d-none" : string.Empty)">
+                                            <span >
+                                              بدون تخفیف
+
+                                            </span>
+
+                                           
+                                        </div>
+                                     
+                                                    
+                                  
+                                    </td>
+                                    <td class="product-cart-price">
+                                    <span class="amount persian-numbers">
+                                            @variant.Score
+                                        
+                                    <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                       title="بعد از پایان مهلت مرجوعی، برای دریافت امتیاز به صفحه ماموریت های مارکت خونه سر بزنید."></i>
+                                    </span>
+                                    </td>
+                                    <td>
+                                        <div>
+
+                                            <a href="#" class="btn-add-to-cart-in-seller-tables-in-product-single-page btn btn-primary">
+                                                <span class="btn-add-to-cart-txt" style="color: white">افزودن به سبد خرید</span>
+                                            </a>
+
+                                        </div>
+
+                                    </td>
+                                  
+                                </tr>
+                            }
+
+
+                        </tbody>
+                    </table>
+                }
+
+
+            </div>
+        </div>
+    </div>
+
+
+<!-- End other variants -->

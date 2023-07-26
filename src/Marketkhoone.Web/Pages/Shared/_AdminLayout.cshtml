@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="~/lib/toastr.js/toastr.min.css" />
+    <link rel="stylesheet" href="~/lib/sweetalert2/sweetalert2.min.css" />
+   
+
+    @await RenderSectionAsync("Styles", false)
+    <link rel="stylesheet" href="~/css/site.css">
+    <link rel="stylesheet" href="~/css/admin-styles.css">
+    <link rel="stylesheet" href="~/MarketKhoone.Web.styles.css">
+    <title>@ViewData["Title"] | پنل مدیریت محتوا مارکت خونه</title>
+</head>
+
+<body class="bg-light">
+
+    <!-----------------------  Navbar ----------------------->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                <a href="#" class="navbar-brand display-2">
+                    پنل ادمین فروشگاه
+                </a>
+                <span id="menus-icon" class="navbar-toggler-icon mb-0 h5 me-2 pointer-cursor" data-bs-target="#sidebar"
+                      data-bs-toggle="collapse"></span>
+            </div>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main-menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+           </div>
+    </nav>
+
+    <!----------------------- Navbar End  ----------------------->
+    <!----------------------- Body ----------------------->
+
+    <div class="container-fluid">
+        <div class="row">
+            <partial name="_AdminSidebarPartial" />
+            <!----------------------- Sidebar End ----------------------->
+            <div id="main-content" class="col-12 col-lg-10 ms-auto">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+    <!----------------------- Body End ----------------------->
+
+
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/toastr.js/toastr.min.js"></script>
+    <script src="~/lib/sweetalert2/sweetalert2.min.js"></script>
+    @await RenderSectionAsync("Scripts", false)
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/admin-scripts.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("CustomScripts", false)
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+﻿@model MarketKhoone.ViewModels.Addresses.AddAddressInProfileViewModel
+<form class="alert alert-secondary custom-ajax-form" asp-page-handler="Add" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="row">
+        <div class="col-12 col-sm-6 col-lg-3 my-2">
+            <label class="form-label" asp-for="FirstName"></label>
+            <input class="form-control" asp-for="FirstName" />
+            <span class="span-error-message" asp-validation-for="FirstName"></span>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 my-2">
+            <label class="form-label" asp-for="LastName"></label>
+            <input class="form-control" asp-for="LastName" />
+            <span class="span-error-message" asp-validation-for="LastName"></span>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 my-2">
+            <label class="form-label" asp-for="PhoneNumber"></label>
+            <input class="form-control" asp-for="PhoneNumber" />
+            <span class="span-error-message" asp-validation-for="PhoneNumber"></span>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 my-2">
+            <label class="form-label" asp-for="Provinces"></label>
+            <input autocomplete-search-url="@(Url.Page("./Index", "AutocompleteSearchForProvince"))" class="autocomplete form-control" asp-for="Provinces" />
+            <span class="span-error-message" asp-validation-for="Provinces"></span>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 my-2">
+            <label class="form-label" asp-for="CityId"></label>
+            <input class="form-control" asp-for="CityId" />
+            <span class="span-error-message" asp-validation-for="CityId"></span>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 my-2">
+            <label class="form-label" asp-for="AddressLine"></label>
+            <input class="form-control" asp-for="AddressLine" />
+            <span class="span-error-message" asp-validation-for="AddressLine"></span>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 my-2">
+            <label class="form-label" asp-for="Pob"></label>
+            <input class="form-control" asp-for="Pob" />
+            <span class="span-error-message" asp-validation-for="Pob"></span>
+        </div>
+        <div class="col-12 col-lg-6 my-2 form-check form-switch px-3">
+            <label class="form-check-label" asp-for="IsDefault">آدرس پیش فرض</label>
+            <div>
+                <input class="form-check-input m-0" asp-for="IsDefault" />
+            </div>
+        </div>
+        <div class="col-12 my-2">
+            <div class="d-grid d-lg-block">
+                <button type="submit" class="btn btn-primary d-inline-flex align-items-center submit-custom-ajax-button">
+                    افزودن
+                    <span class="spinner-border spinner-border-sm d-none ms-2"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</form>
+

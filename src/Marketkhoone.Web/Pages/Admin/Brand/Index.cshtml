@@ -1,0 +1,101 @@
+﻿@page
+@model Marketkhoone.Web.Pages.Admin.Brand.IndexModel
+@{
+    ViewData["Title"] = "برند ها";
+}
+
+<div class="card text-dark bg-white border-0 shadow">
+    <div class="card-body">
+        <h5 class="card-title">
+            @ViewData["Title"]
+        </h5>
+        <div class="d-grid d-lg-block mb-2">
+            <a asp-page-handler="Add" class="btn btn-outline-primary show-modal-form-button" functionNameToCallInTheEnd="editBrandFunction">
+                افزودن برند
+            </a>
+        </div>
+        <form class="alert alert-secondary search-form-via-ajax">
+            <input asp-for="Brands.Pagination.CurrentPage" />
+            <input asp-for="Brands.Pagination.PageCount" />
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <h5>
+                جستجو در
+                @ViewData["Title"]
+            </h5>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3 my-2">
+                    <label class="form-label" asp-for="Brands.SearchBrands.TitleFa"></label>
+                    <input class="form-control" asp-for="Brands.SearchBrands.TitleFa" />
+                    <span class="span-error-message" asp-validation-for="Brands.SearchBrands.TitleFa"></span>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 my-2">
+                    <label class="form-label" asp-for="Brands.SearchBrands.TitleEn"></label>
+                    <input class="form-control" asp-for="Brands.SearchBrands.TitleEn" />
+                    <span class="span-error-message" asp-validation-for="Brands.SearchBrands.TitleEn"></span>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 my-2">
+                    <label class="form-label" asp-for="Brands.SearchBrands.JudiciaryLink"></label>
+                    <input class="form-control" asp-for="Brands.SearchBrands.JudiciaryLink" />
+                    <span class="span-error-message" asp-validation-for="Brands.SearchBrands.JudiciaryLink"></span>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 my-2">
+                    <label class="form-label" asp-for="Brands.SearchBrands.BrandLinkEn"></label>
+                    <input class="form-control" asp-for="Brands.SearchBrands.BrandLinkEn" />
+                    <span class="span-error-message" asp-validation-for="Brands.SearchBrands.BrandLinkEn"></span>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 my-2">
+                    <label class="form-label" asp-for="Brands.SearchBrands.IsConfirmed"></label>
+                    <select class="form-select" asp-for="Brands.SearchBrands.IsConfirmed">
+                        <option value="">همه</option>
+                        <option value="true">فقط تایید شده ها</option>
+                        <option value="false">فقط تایید نشده ها</option>
+                    </select>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 my-2">
+                    <label class="form-label" asp-for="Brands.SearchBrands.IsIranianBrand"></label>
+                    <select class="form-select" asp-for="Brands.SearchBrands.IsIranianBrand">
+                        <option value="">همه</option>
+                        <option value="true">ایرانی</option>
+                        <option value="false">خارجی</option>
+                    </select>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 my-2">
+                    <label class="form-label" asp-for="Brands.SearchBrands.DeletedStatus"></label>
+                    <select class="form-select" asp-for="Brands.SearchBrands.DeletedStatus" asp-items="Html.GetEnumSelectList<MarketKhoone.ViewModels.DeletedStatus>()"></select>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 my-2">
+                    <label class="form-label" asp-for="Brands.SearchBrands.SortingBrands"></label>
+                    <select class="form-select" asp-for="Brands.SearchBrands.SortingBrands" asp-items="Html.GetEnumSelectList<MarketKhoone.ViewModels.Enums.SortingBrands>()"></select>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 my-2">
+                    <label class="form-label" asp-for="Brands.SearchBrands.SortingOrder"></label>
+                    <select class="form-select" asp-for="Brands.SearchBrands.SortingOrder" asp-items="Html.GetEnumSelectList<MarketKhoone.ViewModels.SortingOrder>()"></select>
+                </div>
+                <div class="col-12 my-2">
+                    <div class="d-grid d-lg-block">
+                        <button type="submit" class="btn btn-primary d-inline-flex align-items-center search-form-submit-button" disabled>
+                            جستجو ...
+                            <span class="spinner-border spinner-border-sm d-none ms-2"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="data-table-place">
+                <div class="text-center data-table-loading">
+                    <img src="~/images/application/loading.gif" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/lib/tinymce/tinymce.min.js"></script>
+    <script src="~/lib/sweetalert2/dist/sweetalert2.js"></script>
+}
+@section CustomScripts{
+    <script src="~/Pages/Admin/Brand/Index.cshtml.js"></script>
+}
+@section Styles{
+    <link rel="stylesheet" href="~/lib/sweetalert2/dist/sweetalert2.css" />
+}

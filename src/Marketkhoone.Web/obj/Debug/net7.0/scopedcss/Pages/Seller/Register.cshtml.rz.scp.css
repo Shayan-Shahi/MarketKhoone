@@ -1,0 +1,17 @@
+﻿#register-seller-right-side[b-5ltno2j2v8] {
+     background: #e6e6e6;
+ }
+
+#register-seller-right-side .border-end[b-5ltno2j2v8] {
+    border-left-width: 3px !important;
+}
+
+@media only screen and (min-width: 768px) {
+    #register-seller-right-side[b-5ltno2j2v8] {
+        height: 100vh;
+    }
+
+    .over-flow-scroll-y[b-5ltno2j2v8] {
+        overflow-y: scroll;
+    }
+}

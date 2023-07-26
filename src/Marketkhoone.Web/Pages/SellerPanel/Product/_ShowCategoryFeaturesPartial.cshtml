@@ -1,0 +1,27 @@
+﻿@model MarketKhoone.ViewModels.CategoryFeatures.ProductFeaturesForCreateProductViewModel
+
+@foreach (var item in Model.Features)
+{
+    <div class="my-2 col-md-6 col-lg-4">
+        <label class="form-label">
+            @item.FeatureTitle 
+        </label>
+
+        @if (Model.FeaturesConstantValues.Count(x=>x.FeatureId == item.FeatureId) > 0)
+        {
+            <select name="ProductFeatureConstantValue@(item.FeatureId)" class="form-select custom-select2" multiple="multiple" >
+                @foreach (var constantValue in Model.FeaturesConstantValues.Where(x => x.FeatureId == item.FeatureId))
+                {
+                    <option value="@constantValue.Value">@constantValue.Value</option>
+                }
+            </select>
+        }
+        else
+        {
+            <input name="ProductFeatureValue@(item.FeatureId)" class="form-control"/>
+        }
+        <span class="span-error-message"></span>
+
+    </div>
+}
+<button class="btn btn-primary go-to-next-tab" type="button">مرحله بعد</button>

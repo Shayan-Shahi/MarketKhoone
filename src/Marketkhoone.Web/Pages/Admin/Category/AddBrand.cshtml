@@ -1,0 +1,55 @@
+﻿@model MarketKhoone.ViewModels.Categories.AddBrandToCategoryViewModel
+@{
+    var showEmptySelectedBrandBox = Model.SelectedBrands.Count > 0 ? " d-none" : string.Empty;
+}
+<form id="add-brand-to-category-form" class="alert alert-secondary custom-ajax-form" asp-page-handler="AddBrand" method="post">
+    @foreach (var brand in Model.SelectedBrands)
+    {
+        <input type="hidden" name="SelectedBrands" value="@brand" />
+    }
+    <input asp-for="SelectedCategoryId" />
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="row">
+        <div class="col-12 col-md-6 my-2">
+            <label class="form-label" for="commission-percentage-input">درصد کمیسیون</label>
+            <input class="form-control" id="commission-percentage-input" type="number" value="0" />
+        </div>
+        <div class="col-12 col-md-6 my-2">
+            <label class="form-label" for="search-brand">جستجو برند</label>
+            <input autocomplete-search-url="@(Url.Page("./Index", "AutocompleteSearch"))" class="autocomplete form-control" id="search-brand" />
+        </div>
+        <p class="mt-3">
+            برند های انتخاب شده برای این دسته بندی
+        </p>
+        <div id="selected-brands-box" class="mb-3">
+            @if (Model.SelectedBrands.Count > 0)
+            {
+                foreach (var brand in Model.SelectedBrands)
+                {
+                    var splitBrand = brand.Split("|||");
+                    <div class="btn-group m-1">
+                        <button type="button" class="btn btn-outline-dark">
+                            @splitBrand[0]
+                        </button>
+                        <button type="button" class="btn btn-info text-white">
+                            %
+                            @splitBrand[1]
+                        </button>
+                        <button type="button" class="btn btn-danger remove-selected-brand">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                    </div>
+                }
+            }
+            <div id="empty-selected-brands" class="btn btn-warning@(showEmptySelectedBrandBox)">برندی برای این دسته بندی انتخاب نشده است</div>
+        </div>
+        <div class="col-12 my-2">
+            <div class="d-grid d-lg-block">
+                <button type="submit" class="btn btn-primary d-inline-flex align-items-center submit-custom-ajax-button">
+                    ذخیره نهایی تغیبرات اعمال شده
+                    <span class="spinner-border spinner-border-sm d-none ms-2"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</form>

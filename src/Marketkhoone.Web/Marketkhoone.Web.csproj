@@ -1,0 +1,129 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+	  <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Pages\Admin\Brand\Index.cshtml.js" />
+    <None Remove="Pages\Admin\Category\AddBrand - Copy.cshtml.css" />
+    <None Remove="Pages\Admin\Category\AddBrand.cshtml.css" />
+    <None Remove="Pages\Admin\Category\Index.cshtml.js" />
+    <None Remove="Pages\Admin\Feature\Index.cshtml.js" />
+    <None Remove="Pages\Admin\Product\Index.cshtml.js" />
+    <None Remove="Pages\Compare\Index.cshtml.js" />
+    <None Remove="Pages\Identity\LoginWithPhoneNumber.cshtml.css" />
+    <None Remove="Pages\Identity\LoginWithPhoneNumber.cshtml.js" />
+    <None Remove="Pages\Identity\RegisterLogin.cshtml.css" />
+    <None Remove="Pages\Product\Index.cshtml.css" />
+    <None Remove="Pages\Product\Index.cshtml.js" />
+    <None Remove="Pages\Profile\Orders\Index.cshtml.css" />
+    <None Remove="Pages\Seller\ConfirmationPhoneNumber.cshtml.js" />
+    <None Remove="Pages\Seller\CreateSeller.cshtml.css" />
+    <None Remove="Pages\Seller\CreateSeller.cshtml.js" />
+    <None Remove="Pages\Seller\LoginWithPhoneNumber.cshtml.js" />
+    <None Remove="Pages\Seller\Register.cshtml.css" />
+    <None Remove="Pages\Seller\Register.cshtml.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Pages\Admin\Brand\Index.cshtml.js" />
+    <Content Include="Pages\Admin\Category\AddBrand.cshtml.css" />
+    <Content Include="Pages\Admin\Category\Index.cshtml.js" />
+    <Content Include="Pages\Admin\Feature\Index.cshtml.js" />
+    <Content Include="Pages\Admin\Product\Index.cshtml.js" />
+    <Content Include="Pages\Compare\Index.cshtml.js" />
+    <Content Include="Pages\Identity\LoginWithPhoneNumber.cshtml.css" />
+    <Content Include="Pages\Identity\LoginWithPhoneNumber.cshtml.js" />
+    <Content Include="Pages\Identity\RegisterLogin.cshtml.css" />
+    <Content Include="Pages\Product\Index.cshtml.css" />
+    <Content Include="Pages\Product\Index.cshtml.js" />
+    <Content Include="Pages\Profile\Orders\Index.cshtml.css" />
+    <Content Include="Pages\Seller\ConfirmationPhoneNumber.cshtml.js" />
+    <Content Include="Pages\Seller\CreateSeller.cshtml.css" />
+    <Content Include="Pages\Seller\CreateSeller.cshtml.js" />
+    <Content Include="Pages\Seller\LoginWithPhoneNumber.cshtml.js" />
+    <Content Include="Pages\Seller\Register.cshtml.css" />
+    <Content Include="Pages\Seller\Register.cshtml.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\images\page-single-product\contact-us.svg" />
+    <None Include="wwwroot\assets\images\page-single-product\delivery.svg" />
+    <None Include="wwwroot\assets\images\page-single-product\origin-guarantee.svg" />
+    <None Include="wwwroot\assets\images\page-single-product\payment-terms.svg" />
+    <None Include="wwwroot\assets\images\page-single-product\return-policy.svg" />
+    <None Include="wwwroot\fonts\vazir\Vazir-Regular.woff2" />
+    <None Include="wwwroot\websiteStyles\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\websiteStyles\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\websiteStyles\fonts\IRANSans\woff2\IRANSansWeb.woff2" />
+    <None Include="wwwroot\websiteStyles\fonts\IRANSans\woff2\IRANSansWeb_Black.woff2" />
+    <None Include="wwwroot\websiteStyles\fonts\IRANSans\woff2\IRANSansWeb_Bold.woff2" />
+    <None Include="wwwroot\websiteStyles\fonts\IRANSans\woff2\IRANSansWeb_Light.woff2" />
+    <None Include="wwwroot\websiteStyles\fonts\IRANSans\woff2\IRANSansWeb_Medium.woff2" />
+    <None Include="wwwroot\websiteStyles\fonts\IRANSans\woff2\IRANSansWeb_UltraLight.woff2" />
+    <None Include="wwwroot\websiteStyles\fonts\lightgallery\lg.svg" />
+    <None Include="wwwroot\websiteStyles\fonts\materialdesignicons-webfont.woff2" />
+    <None Include="wwwroot\websiteStyles\images\footer\features\24-hours-support.svg" />
+    <None Include="wwwroot\websiteStyles\images\footer\features\delivery-truck.svg" />
+    <None Include="wwwroot\websiteStyles\images\footer\features\easy-return.svg" />
+    <None Include="wwwroot\websiteStyles\images\footer\features\income.svg" />
+    <None Include="wwwroot\websiteStyles\images\footer\features\original.svg" />
+    <None Include="wwwroot\websiteStyles\images\page-faq\other.svg" />
+    <None Include="wwwroot\websiteStyles\images\page-single-product\contact-us.svg" />
+    <None Include="wwwroot\websiteStyles\images\page-single-product\delivery.svg" />
+    <None Include="wwwroot\websiteStyles\images\page-single-product\origin-guarantee.svg" />
+    <None Include="wwwroot\websiteStyles\images\page-single-product\payment-terms.svg" />
+    <None Include="wwwroot\websiteStyles\images\page-single-product\return-policy.svg" />
+    <None Include="wwwroot\websiteStyles\images\slider-amazing\shopping-cart.svg" />
+    <None Include="wwwroot\websiteStyles\images\three-dots.svg" />
+    <None Include="wwwroot\websiteStyles\js\main.js" />
+    <None Include="wwwroot\websiteStyles\js\vendor\bootstrap-slider.min.js" />
+    <None Include="wwwroot\websiteStyles\js\vendor\bootstrap.js" />
+    <None Include="wwwroot\websiteStyles\js\vendor\countdown.min.js" />
+    <None Include="wwwroot\websiteStyles\js\vendor\jquery-3.2.1.min.js" />
+    <None Include="wwwroot\websiteStyles\js\vendor\jquery.countdown.js" />
+    <None Include="wwwroot\websiteStyles\js\vendor\jquery.ez-plus.js" />
+    <None Include="wwwroot\websiteStyles\js\vendor\jquery.jqZoom.js" />
+    <None Include="wwwroot\websiteStyles\js\vendor\jquery.nice-select.min.js" />
+    <None Include="wwwroot\websiteStyles\js\vendor\lightgallery-all.js" />
+    <None Include="wwwroot\websiteStyles\js\vendor\nouislider.min.js" />
+    <None Include="wwwroot\websiteStyles\js\vendor\owl.carousel.min.js" />
+    <None Include="wwwroot\websiteStyles\js\vendor\ResizeSensor.min.js" />
+    <None Include="wwwroot\websiteStyles\js\vendor\sweetalert2.all.min.js" />
+    <None Include="wwwroot\websiteStyles\js\vendor\theia-sticky-sidebar.min.js" />
+    <None Include="wwwroot\websiteStyles\js\vendor\wNumb.js" />
+  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="12.0.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.5" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.6" />
+		<PackageReference Include="Parbad" Version="3.7.0" />
+		<PackageReference Include="SixLabors.ImageSharp.Web" Version="3.0.1" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\Marketkhoone.Common\MarketKhoone.Common.csproj" />
+	  <ProjectReference Include="..\Marketkhoone.DataLayer\MarketKhoone.DataLayer.csproj" />
+	  <ProjectReference Include="..\Marketkhoone.Entities\MarketKhoone.Entities.csproj" />
+	  <ProjectReference Include="..\Marketkhoone.IocConfig\MarketKhoone.IocConfig.csproj" />
+	  <ProjectReference Include="..\Marketkhoone.Services\MarketKhoone.Services.csproj" />
+	  <ProjectReference Include="..\Marketkhoone.ViewModels\MarketKhoone.ViewModels.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="CustomTagHelpers\" />
+	  <Folder Include="wwwroot\images\products\short-description-images\" />
+	  <Folder Include="wwwroot\images\products\specialty-check-images\" />
+	  <Folder Include="wwwroot\websiteStyles\images\menu-main\card\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Content Update="Pages\Admin\Seller\List.cshtml">
+	    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+	    <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+	  </Content>
+	</ItemGroup>
+</Project>

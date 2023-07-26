@@ -1,0 +1,85 @@
+﻿@page
+@model Marketkhoone.Web.Pages.Admin.Guarantee.IndexModel
+@{
+    ViewData["Title"] = "گارانتی ها";
+}
+
+<div class="card text-dark bg-white border-0 shadow">
+    <div class="card-body">
+        <h5 class="card-title">
+            @ViewData["Title"]
+        </h5>
+        <div class="d-grid d-lg-block mb-2">
+            <a id="add-category-feature-link" asp-page-handler="Add" class="btn btn-outline-primary show-modal-form-button">
+                افزودن گارانتی
+            </a>
+        </div>
+        <form class="alert alert-secondary search-form-via-ajax">
+            <input asp-for="Guarantees.Pagination.CurrentPage" />
+            <input asp-for="Guarantees.Pagination.PageCount" />
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <h5>
+                جستجو در
+                @ViewData["Title"]
+            </h5>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3 my-2">
+                    <label class="form-label" asp-for="Guarantees.SearchGuarantees.Title"></label>
+                    <input class="form-control" asp-for="Guarantees.SearchGuarantees.Title" />
+                    <span class="span-error-message" asp-validation-for="Guarantees.SearchGuarantees.Title"></span>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 my-2">
+                    <label class="form-label" asp-for="Guarantees.SearchGuarantees.MonthsCount"></label>
+                    <input class="form-control" asp-for="Guarantees.SearchGuarantees.MonthsCount" />
+                    <span class="span-error-message" asp-validation-for="Guarantees.SearchGuarantees.MonthsCount"></span>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 my-2">
+                    <label class="form-label" asp-for="Guarantees.SearchGuarantees.IsConfirmed"></label>
+                    <select class="form-select" asp-for="Guarantees.SearchGuarantees.IsConfirmed">
+                        <option value="">همه</option>
+                        <option value="true">تایید شده</option>
+                        <option value="false">تایید نشده</option>
+                    </select>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 my-2">
+                    <label class="form-label" asp-for="Guarantees.SearchGuarantees.Sorting"></label>
+                    <select class="form-select" asp-for="Guarantees.SearchGuarantees.Sorting" asp-items="Html.GetEnumSelectList<MarketKhoone.ViewModels.Guarantees.SortingGuarantees>()"></select>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 my-2">
+                    <label class="form-label" asp-for="Guarantees.SearchGuarantees.SortingOrder"></label>
+                    <select class="form-select" asp-for="Guarantees.SearchGuarantees.SortingOrder" asp-items="Html.GetEnumSelectList<MarketKhoone.ViewModels.SortingOrder>()"></select>
+                </div>
+                <div class="col-12 my-2">
+                    <div class="d-grid d-lg-block">
+                        <button type="submit" class="btn btn-primary d-inline-flex align-items-center search-form-submit-button" disabled>
+                            جستجو ...
+                            <span class="spinner-border spinner-border-sm d-none ms-2"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="data-table-place">
+                <div class="text-center data-table-loading">
+                    <img src="~/images/application/loading.gif" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/lib/tinymce/tinymce.min.js"></script>
+    <script src="~/lib/jqueryui/jquery-ui.min.js"></script>
+    <script src="~/lib/select2/js/select2.min.js"></script>
+    <script src="~/lib/select2/js/i18n/fa.min.js"></script>
+}
+@section CustomScripts{
+    <script src="~/Pages/Admin/Guarantee/Index.cshtml.js"></script>
+}
+@section Styles
+    {
+    <link rel="stylesheet" href="~/lib/jqueryui/themes/base/jquery-ui.min.css" />
+    <link rel="stylesheet" href="~/lib/select2/css/select2.min.css" />
+    <link rel="stylesheet" href="~/lib/select2-bootstrap-5-theme/select2-bootstrap-5-theme.rtl.min.css" />
+}

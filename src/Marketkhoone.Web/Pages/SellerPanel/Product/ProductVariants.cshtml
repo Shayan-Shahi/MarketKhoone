@@ -1,0 +1,123 @@
+﻿@model List<MarketKhoone.ViewModels.ProductVariants.ShowProductVariantViewModel>
+<div class="card">
+    <div class="card-body">
+        @if (Model.Count > 0)
+        {
+            <div class="table-responsive data-table-body">
+                <table class="table table-bordered table-striped table-hover">
+                    <thead class="table-light">
+                        <tr>
+                            <th>@Html.DisplayNameFor(x=>x[0].VariantValue)</th>
+                            <th>@Html.DisplayNameFor(x=>x[0].GuaranteeTitle)</th>
+                            <th>@Html.DisplayNameFor(x=>x[0].VariantCode)</th>
+                            <th>@Html.DisplayNameFor(x=>x[0].Price)</th>
+                            <th>@Html.DisplayNameFor(x=>x[0].OffPrice)</th>
+                            <th>@Html.DisplayNameFor(x=>x[0].OffPercentage)</th>
+                            <th>@Html.DisplayNameFor(x=>x[0].StartDateTime)</th>
+                            <th>@Html.DisplayNameFor(x=>x[0].EndDateTime)</th>
+                            <th>@Html.DisplayNameFor(x=>x[0].MaxCountInCart)</th>
+                            <th>عملیات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var productVariant in Model)
+                        {
+                            var hasDiscount = productVariant.OffPercentage != null;
+                            <tr>
+                                <td>
+                                    @(productVariant.VariantValue ?? "بدون تنوع")
+                                    @if (productVariant.VariantIsColor != null)
+                                    {
+                                        @if (productVariant.VariantIsColor.Value)
+                                        {
+                                            <span class="rounded" style="background: @productVariant.VariantColorCode">
+                                                &nbsp;
+                                                &nbsp;
+                                                &nbsp;
+                                            </span>
+                                        }
+                                    }
+                                </td>
+                                <td>@productVariant.GuaranteeTitle</td>
+                                <td>@productVariant.VariantCode</td>
+                                <td>
+                                    <span class="persian-numbers">
+                                        @productVariant.Price.ToString("#,0")
+                                    </span>
+                                    تومان
+                                </td>
+                                <td>
+                                    @if (hasDiscount)
+                                    {
+                                        <span class="persian-numbers">
+                                            @productVariant.OffPrice.Value.ToString("#,0")
+                                        </span>
+                                        <text>تومان</text>
+                                    }
+                                    else
+                                    {
+                                        @:بدون تخفیف
+                                    }
+                                </td>
+                                <td>
+                                    @if (hasDiscount)
+                                    {
+                                        <span class="persian-numbers">
+                                            @productVariant.OffPercentage.Value
+                                        </span>
+                                        <text>درصد</text>
+                                    }
+                                    else
+                                    {
+                                        @:بدون تخفیف
+                                    }
+                                </td>
+                                <td>
+                                    @if (hasDiscount)
+                                    {
+                                        <span class="persian-numbers">
+                                            @productVariant.StartDateTime
+                                        </span>
+                                    }
+                                    else
+                                    {
+                                        @:بدون تخفیف
+                                    }
+                                </td>
+                                <td>
+                                    @if (hasDiscount)
+                                    {
+                                        <span class="persian-numbers">
+                                            @productVariant.EndDateTime
+                                        </span>
+                                    }
+                                    else
+                                    {
+                                        @:بدون تخفیف
+                                    }
+                                </td>
+                                <td>@productVariant.MaxCountInCart</td>
+                                <td>
+                                    <button functionNameToCallOnClick="editProductVariant"
+                                            product-variant-id="@productVariant.Id"
+                                            class="btn btn-warning  get-html-with-ajax">
+                                        ویرایش
+                                    </button>
+                                    <button functionNameToCallOnClick="addEditDiscount"
+                                            product-variant-id="@productVariant.Id"
+                                            class="btn btn-primary get-html-with-ajax">
+                                        ایجاد / ویرایش تخفیف
+                                    </button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+        else
+        {
+            <partial name="_RecordNotFound" />
+        }
+    </div>
+</div>

@@ -1,0 +1,19 @@
+﻿using MarketKhoone.Entities;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
+namespace MarketKhoone.DataLayer.Configurations
+{
+    public class DiscountNoticeConfiguration : IEntityTypeConfiguration<DiscountNotice>
+    {
+        public void Configure(EntityTypeBuilder<DiscountNotice> builder)
+        {
+            builder.HasKey(x => new { x.UserId, x.ProductId });
+
+            builder.HasOne(x => x.User)
+                .WithMany(x => x.DiscountNotices)
+                .HasForeignKey(x => x.UserId)
+                .OnDelete(DeleteBehavior.NoAction);
+        }
+    }
+}

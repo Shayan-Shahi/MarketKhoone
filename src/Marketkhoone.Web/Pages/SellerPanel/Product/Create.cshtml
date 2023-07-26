@@ -1,0 +1,222 @@
+﻿@page
+@model Marketkhoone.Web.Pages.SellerPanel.Product.CreateModel
+@{
+    ViewData["Title"] = "ایجاد محصول";
+}
+
+<div class="card">
+    <div class="card-header">
+        <div class="card-title">
+            ایجاد محصول
+        </div>
+    </div>
+    <div class="card-body">
+        <form id="create-product-form" method="post" class="public-ajax-form" functionNameToCallInTheEnd="createProductFunction">
+            <input asp-for="Product.MainCategoryId" />
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <nav>
+                <div class="nav nav-tabs nav-fill" id="add-product-tab">
+                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#product-category" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                        انتخاب گروه کالا
+                    </button>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#product-info" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                        درج اطلاعات کالا
+                    </button>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#specialty-check" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                        بررسی تخصصی
+                    </button>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#product-features" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                        ویژگی های محصول
+                    </button>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#product-images" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                        بارگذاری تصاویر
+                    </button>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#product-videos" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                        بارگذاری ویدیو
+                    </button>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#product-title" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                        عنوان کالا
+                    </button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="product-category">
+                        <div class="card overflow-hidden">
+                            <div class="card-body row flex-nowrap overflow-auto">
+                            </div>
+                            <div class="row px-4 my-3">
+                                <div class="col-lg-9 d-flex align-items-center rounded-1 bg-secondary text-white rem0and9 py-3 py-lg-0 mb-3 mb-lg-0">
+                                    <span>گروه کالایی انتخابی شما : &nbsp;</span>
+                                    <span id="selected-categories-for-add-product">
+                                    </span>
+                                </div>
+                                <div class="col-lg-3 text-center text-lg-start">
+                                    <button type="button" disabled="disabled" class="btn btn-light" id="select-product-category-button">انتخاب گروه کالا</button>
+                                    <button class="btn btn-outline-danger" type="submit" id="reset-product-category-button">
+                                        <i class="bi bi-x-lg"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="product-info">
+                        <div class="card">
+                            <div class="card-body row">
+                                <div class="my-2 col-md-6 col-lg-4">
+                                    <br />
+                                    <input class="form-check-input" asp-for="Product.IsFake">
+                                    <label class="form-check-label" asp-for="Product.IsFake">
+                                        نشان کالای غیر اصل
+                                        (
+                                        <span class="badge bg-light text-dark">
+                                            غیر اصل
+                                        </span>
+                                        )
+                                        <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                           title="با انتخاب این گزینه، کلمه “غیراصل” در کنار عنوان کالا و نشان “غیراصل” در کنار تصویر کالای شما در سایت قرار خواهد گرفت. برند کالا باید “متفرقه” درج شود. در صورت فروش کالای غیراصل بدون این نشان، مطابق با قوانین جریمه خواهید شد."></i>
+                                    </label>
+                                </div>
+                                <div class="my-2 col-md-6 col-lg-4">
+                                    <label class="d-flex justify-content-between form-label" asp-for="Product.BrandId">
+                                        <span>
+                                           @*اصالت کالا*@
+                                            @Html.DisplayNameFor(x => x.Product.BrandId)
+                                        </span>
+                                        <a id="request-new-brand-url" asp-page-handler="RequestForAddBrand" class="text-info border-bottom-dashed show-modal-form-button">
+                                            درخواست برند جدید
+                                        </a>
+                                    </label>
+                                    <select class="form-select custom-select2" asp-for="Product.BrandId">
+                                        <option value="0">انتخاب کنید</option>
+                                    </select>
+                                    <span asp-validation-for="Product.BrandId" class="span-error-message"></span>
+                                </div>
+
+                                <div class="my-2 col-md-6 col-lg-4 alert alert-info invisible" id="commission-percentage-place-in-create-product">
+                                </div>
+                                <div class="my-2 col-md-6 col-lg-4">
+                                    <label class="form-label" asp-for="Product.PackWeight">
+                                        وزن بسته بندی (گرم)
+                                    </label>
+                                    <input asp-for="Product.PackWeight" class="form-control" />
+                                    <span asp-validation-for="Product.PackWeight" class="span-error-message"></span>
+                                </div>
+                                <div class="my-2 col-md-6 col-lg-4">
+                                    <label class="form-label" asp-for="Product.PackLength">
+                                        طول بسته بندی (سانتیمتر)
+                                    </label>
+                                    <input asp-for="Product.PackLength" class="form-control" />
+                                    <span asp-validation-for="Product.PackLength" class="span-error-message"></span>
+                                </div>
+                                <div class="my-2 col-md-6 col-lg-4">
+                                    <label class="form-label" asp-for="Product.PackWidth">
+                                        عرض بسته بندی (سانتیمتر)
+                                    </label>
+                                    <input asp-for="Product.PackWidth" class="form-control" />
+                                    <span asp-validation-for="Product.PackWidth" class="span-error-message"></span>
+                                </div>
+                                <div class="my-2 col-md-6 col-lg-4">
+                                    <label class="form-label" asp-for="Product.PackHeight">
+                                        ارتفاع بسته بندی (سانتیمتر)
+                                    </label>
+                                    <input asp-for="Product.PackHeight" class="form-control" />
+                                    <span asp-validation-for="Product.PackHeight" class="span-error-message"></span>
+                                </div>
+                                <div class="my-2">
+                                    <label class="form-label" asp-for="Product.ShortDescription">
+                                    </label>
+                                    <textarea upload-image-url="UploadShortDescriptionImages" add-image-plugin="true" asp-for="Product.ShortDescription" class="custom-tinymce"></textarea>
+                                </div>
+                                <button class="btn btn-primary go-to-next-tab" type="button">مرحله بعد</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="specialty-check">
+                        <div class="card">
+                            <div class="card-body row">
+                                <div class="my-2">
+                                    <label class="form-label" asp-for="Product.SpecialtyCheck">
+                                    </label>
+                                    <textarea upload-image-url="UploadSpecialtyCheckImages" add-image-plugin="true" asp-for="Product.SpecialtyCheck" class="custom-tinymce"></textarea>
+                                </div>
+                                <button class="btn btn-primary go-to-next-tab" type="button">مرحله بعد</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="product-features">
+                        <div class="card">
+                            <div class="card-body row">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="product-images">
+                        <div class="card">
+                            <div class="card-body row">
+                                <div class="my-2">
+                                    <label class="form-label" asp-for="Product.Pictures">
+                                    </label>
+                                    <input asp-for="Product.Pictures" class="multiple-images-preview-input form-control" images-preview-box="product-images-preview-box" />
+                                    <span asp-validation-for="Product.Pictures" class="span-error-message"></span>
+                                    <div class="form-text">
+                                        اولین تصویر، تصویر اصلی محصول میباشد
+                                    </div>
+                                </div>
+                                <div clas="my-2 d-none" id="product-images-preview-box">
+                                </div>
+                                <button class="btn btn-primary go-to-next-tab" type="button">مرحله بعد</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="product-videos">
+                        <div class="card">
+                            <div class="card-body row">
+                                <div class="my-2">
+                                    <label class="form-label" asp-for="Product.Videos">
+                                    </label>
+                                    <input asp-for="Product.Videos" class="form-control" />
+                                    <span asp-validation-for="Product.Videos" class="span-error-message"></span>
+                                </div>
+                                <button class="btn btn-primary go-to-next-tab" type="button">مرحله بعد</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="product-title">
+                        <div class="card">
+                            <div class="card-body row">
+                                <div class="my-2 col-md-6">
+                                    <label class="form-label" asp-for="Product.PersianTitle">
+                                    </label>
+                                    &quot;
+                                    <input placeholder="ماهیت کالا + برند کالا + کلمه &quot;مدل&quot; + مدل کالا" asp-for="Product.PersianTitle" class="form-control" />
+                                    <span asp-validation-for="Product.PersianTitle" class="span-error-message"></span>
+                                </div>
+                                <div class="my-2 col-md-6">
+                                    <label class="form-label" asp-for="Product.EnglishTitle">
+                                    </label>
+                                    <input asp-for="Product.EnglishTitle" class="form-control" />
+                                    <span asp-validation-for="Product.EnglishTitle" class="span-error-message"></span>
+                                </div>
+                                <button class="btn btn-primary">ایجاد محصول</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </form>
+    </div>
+</div>
+@section CustomScripts
+    {
+    <script src="~/Pages/SellerPanel/Product/Create.cshtml.js"></script>
+}
+@section Scripts
+    {
+    <partial name="Shared/_ValidationScriptsPartial" />
+    <script src="~/lib/select2/js/select2.min.js"></script>
+    <script src="~/lib/select2/js/i18n/fa.min.js"></script>
+    <script src="~/lib/tinymce/tinymce.min.js"></script>
+}
+@section Styles
+    {
+    <link rel="stylesheet" href="~/lib/select2/css/select2.min.css" />
+    <link rel="stylesheet" href="~/lib/select2-bootstrap-5-theme/select2-bootstrap-5-theme.rtl.min.css" />
+}
